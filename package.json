@@ -2,7 +2,7 @@
   "name": "11ty-high-performance-latex-blog",
   "version": "0.0.1",
   "license": "MIT",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator with a LaTeX style.",
+  "description": "Discover the Innovate World of Xiyue Zhang",
   "scripts": {
     "build-ci": "npm run js-build && eleventy && npm run test",
     "build": "npm run clean && npm run build-ci",
@@ -21,12 +21,12 @@
   "pre-commit": [],
   "repository": {
     "type": "git",
-    "url": "git://https://github.com/xiyueuyix/11ty-high-performance-latex-blog.git"
+    "url": "git://github.com/xiyueuyix/xiyueuyix.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/xiyueuyix/11ty-high-performance-latex-blog/issues"
+    "url": "https://github.com/xiyueuyix/xiyueuyix.github.io/issues"
   },
-  "homepage": "https://github.com/xiyueuyix/11ty-high-performance-latex-blog#readme",
+  "homepage": "https://github.com/xiyueuyix/xiyueuyix.github.io#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-navigation": "^0.1.3",
