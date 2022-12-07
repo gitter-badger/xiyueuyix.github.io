@@ -143,7 +143,3 @@ Generates a strong [Content-Security-Policy (CSP)](https://developer.mozilla.org
 - Downloaded remote images, and generated sizes are cached in the local filesystem…
 - …and SHOULD be committed to git.
 - `.persistimages.sh` helps with this.
-
-## Disclaimer
-
-This is not an officially supported Google product, but rather [Malte's](https://twitter.com/cramforce) private best-effort open-source project.
