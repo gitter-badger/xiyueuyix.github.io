@@ -20,16 +20,7 @@ header nav {
   z-index: 1;
 }
 
-/*! purgecss start ignore */
-:root {
-  --main-width: calc(100vw - 3em);
-}
 
-@media (min-width: 37.5em) {
-  :root {
-    --main-width: calc(37.5em - 3em);
-  }
-}
 /*! purgecss end ignore */
 
 share-widget {
@@ -87,19 +78,6 @@ header aside {
   position: relative;
 }
 
-#reading-progress {
-  z-index: 1;
-  background-color: var(--primary);
-  width: 100vw;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  transform: translate(-100vw, 0);
-  will-change: transform;
-  pointer-events: none;
-}
-
 #posts li {
   margin-bottom: 0.5em;
 }
@@ -115,7 +93,7 @@ header aside {
   font-family: 'Latin Modern';
   font-style: normal;
   font-weight: normal;
-  font-display: swap;
+  font-display: optional;
   src: url('/fonts/LM-regular.woff2') format('woff2'),
     url('/fonts/LM-regular.woff') format('woff'),
     url('/fonts/LM-regular.ttf') format('truetype');
@@ -125,7 +103,7 @@ header aside {
   font-family: 'Latin Modern';
   font-style: italic;
   font-weight: normal;
-  font-display: swap;
+  font-display: optional;
   src: url('/fonts/LM-italic.woff2') format('woff2'),
     url('/fonts/LM-italic.woff') format('woff'),
     url('/fonts/LM-italic.ttf') format('truetype');
@@ -135,7 +113,7 @@ header aside {
   font-family: 'Latin Modern';
   font-style: normal;
   font-weight: bold;
-  font-display: swap;
+  font-display: optional;
   src: url('/fonts/LM-bold.woff2') format('woff2'),
     url('/fonts/LM-bold.woff') format('woff'),
     url('/fonts/LM-bold.ttf') format('truetype');
@@ -145,7 +123,7 @@ header aside {
   font-family: 'Latin Modern';
   font-style: italic;
   font-weight: bold;
-  font-display: swap;
+  font-display: optional;
   src: url('/fonts/LM-bold-italic.woff2') format('woff2'),
     url('/fonts/LM-bold-italic.woff') format('woff'),
     url('/fonts/LM-bold-italic.ttf') format('truetype');
@@ -155,7 +133,7 @@ header aside {
   font-family: 'Libertinus';
   font-style: normal;
   font-weight: normal;
-  font-display: swap;
+  font-display: optional;
   src: url('/fonts/Libertinus-regular.woff2') format('woff2');
 }
 
@@ -163,7 +141,7 @@ header aside {
   font-family: 'Libertinus';
   font-style: italic;
   font-weight: normal;
-  font-display: swap;
+  font-display: optional;
   src: url('/fonts/Libertinus-italic.woff2') format('woff2');
 }
 
@@ -171,7 +149,7 @@ header aside {
   font-family: 'Libertinus';
   font-style: normal;
   font-weight: bold;
-  font-display: swap;
+  font-display: optional;
   src: url('/fonts/Libertinus-bold.woff2') format('woff2');
 }
 
@@ -179,7 +157,7 @@ header aside {
   font-family: 'Libertinus';
   font-style: italic;
   font-weight: bold;
-  font-display: swap;
+  font-display: optional;
   src: url('/fonts/Libertinus-bold-italic.woff2') format('woff2');
 }
 
@@ -187,7 +165,7 @@ header aside {
   font-family: 'Libertinus';
   font-style: normal;
   font-weight: 600;
-  font-display: swap;
+  font-display: optional;
   src: url('/fonts/Libertinus-semibold.woff2') format('woff2');
 }
 
@@ -195,7 +173,7 @@ header aside {
   font-family: 'Libertinus';
   font-style: italic;
   font-weight: 600;
-  font-display: swap;
+  font-display: optional;
   src: url('/fonts/Libertinus-semibold-italic.woff2') format('woff2');
 }
 
@@ -217,6 +195,12 @@ header aside {
   --table-border-color: black;
   --sidenote-target-border-color: hsl(55, 55%, 70%);
   --footnotes-border-color: hsl(0, 0%, 39%);
+  --main-width: calc(100vw - 3em);
+}
+@media (min-width: 37.5em) {
+  :root {
+    --main-width: calc(37.5em - 3em);
+  }
 }
 
 .latex-dark {
