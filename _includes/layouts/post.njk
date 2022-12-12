@@ -53,16 +53,12 @@ templateClass: tmpl-post
   "description": "{{ content | striptags | truncate(140) }}"
 }
 </script>
-
-<div id="tcomment"></div>
-<script src="https://cdn.staticfile.org/twikoo/1.6.8/twikoo.all.min.js"></script>
-<script>
-      twikoo.init({
-        envId: 'https://my-twikoo-euyix.vercel.app/',
-        el: "#tcomment", // 容器元素
-        path: "{{ metadata.url }}{{ canonicalUrl or page.url }}", 
-        lang: "en-US", // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
-      })
+<script src="https://utteranc.es/client.js"
+        repo="xiyueuyix/xiyueuyix.github.io"
+        issue-term="title"
+        label="Utterances Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
 </script>
-
 {% endblock %}
